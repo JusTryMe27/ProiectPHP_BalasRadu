@@ -1,0 +1,58 @@
+<?php
+	//include "../Controller/signupController.php";
+	session_start();
+?>
+<html>
+
+
+<body>
+
+<h1 style="margin-left:47%; margin-top:5%">Sign up</h1><br><br>
+
+<table style="margin-left:43%">
+    <form method="post" action="../Controllers/signupController.php">
+        <tr>
+            <td >First name:</td>
+            <td><input type="text" name="firstName" placeholder="First name..." /></td>
+        </tr><tr></tr>
+        <tr>
+            <td>Last name:</td>
+            <td><input type="text" name="lastName" placeholder="Last name..." /></td>
+        </tr><tr></tr>
+        <tr>
+            <td>CNP:</td>
+            <td><input type="text" name="cnp" placeholder="CNP..." /></td>
+        </tr><tr></tr>
+        <tr>
+            <td>Phone:</td>
+            <td><input type="text" name="phone" placeholder="Phone..." /></td>
+        </tr><tr></tr>
+        <tr>
+            <td >Username:</td>
+            <td><input type="text" name="userName" placeholder="Username..." /></td>
+        </tr><tr></tr>
+        <tr>
+            <td>Password:</td>
+            <td><input type="password" name="password" placeholder="Password..."/></td>
+        </tr><tr></tr>
+        <tr>
+            <td>Confirm password:</td>
+            <td><input type="password" name="matchingPassword" placeholder="Confirm your password..." /></td></tr>
+        <tr><td></td> </tr>
+        <tr><td><br></td><td><br></td></tr><tr><td></td> </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Submit" name="ok"  width="155"  STYLE="width: 155px"/></td></tr><tr><td></td> </tr>
+        <tr><td><br></td><td><br></td></tr><tr><td></td> </tr>
+
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Cancel" name="cancel"  width="155"  STYLE="width: 155px"/></a><br></td></tr>
+        <a href="../cancel" id="cancel"
+    </form>
+</table><br><br>
+
+
+
+</body>
+</html>

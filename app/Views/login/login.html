@@ -1,0 +1,46 @@
+<?php
+//include "../Controller/loginController.php";
+//include "../Controller/logoutController.php";
+session_start();
+?>
+<html>
+<head>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body >
+<h1 style="margin-left:47%; margin-top:5%">Log in</h1><br><br>
+
+<table style="margin-left:43%">
+    <form method="post" action="../Controller/loginController.php">
+        <tr>
+            <td ><i class="fa fa-user" style="font-size:24px"></i>   Username:</td>
+            <td><input type="text" name="userName" placeholder="Username..." /></td>
+        </tr><tr></tr><td> </td><tr></tr><tr></tr>
+        <tr>
+            <td><i class="fa fa-unlock-alt" style="font-size:24px"></i>   Password:</td>
+            <td><input type="text" name="password" placeholder="Password..." /></td>
+        </tr><tr><td></td> </tr>
+        <tr><td><br></td><td><br></td></tr><tr><td></td> </tr>
+        <tr>
+            <td></td>
+            <a href="/signup"/>Sign up</a>
+
+
+            <td><input type="submit" value="Log in" name="login" id="login" width="155"  STYLE="width: 155px"/></td></tr><tr><td></td> </tr>
+
+        <tr><td><br></td><td><br></td></tr><tr><td></td> </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Sign up" name="signup"  width="155"  STYLE="width: 155px"/><br></td></tr>
+
+    </form>
+</table><br><br>
+
+
+
+</body>
+</html>
